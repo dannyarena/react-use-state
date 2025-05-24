@@ -1,0 +1,13 @@
+button {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+
+button.active  {
+    background-color: gold;
+    font-weight: bold;
+}
+
