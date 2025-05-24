@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import languages from './languages';
 import './App.css'
+import DetailCard from './DetailCard';
 
 function App() {
   const [selectedLanguage, setSelectedLanguage] = useState(null);
@@ -24,18 +25,9 @@ function App() {
 
     <div className="container">
       <h1>Learn Web development</h1>
-      <div className='languages-card'>
-        
-        {/* operatore ternario */}
-        {selectedLanguage ? (
-        <>
-        <h2>{selectedLanguage.title}</h2>
-        <p>{selectedLanguage.description}</p>
-        </>
-        ) : (
-          <p>Nessun linguaggio selezionato</p>
-        )}
-      </div>
+
+                 {/* nome prop */} {/* valore prop */}
+      <DetailCard selectedLanguage={selectedLanguage}/>
     </div>
 
   </>
