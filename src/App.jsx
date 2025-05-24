@@ -21,8 +21,16 @@ function App() {
     <div className="container">
       <h1>Learn Web development</h1>
       <div className='languages-card'>
-        <h2>{languages[0].title}</h2>
-        <p>{languages[0].description}</p>
+        
+        {/* operatore ternario */}
+        {selectedLanguage ? (
+        <>
+        <h2>{selectedLanguage.title}</h2>
+        <p>{selectedLanguage.description}</p>
+        </>
+        ) : (
+          <p>Nessun linguaggio selezionato</p>
+        )}
       </div>
     </div>
 
